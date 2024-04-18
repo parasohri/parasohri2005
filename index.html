@@ -37,6 +37,9 @@
             flex-wrap: nowrap;
            
         }
+         #text{
+            color:orange;
+        }
 
         .top {
             border-radius: 10px;
@@ -171,8 +174,8 @@ margin: 5vw;
             </div>
             <div class="content">
                 <h2>My Self Paras</h2>
-                <h1>I am Btech CSE </h1>
-                <h1>2nd year student.</h1>
+               <h1>I am </h1>
+              <h1> <span id="text"> </span>    </h1> 
             </div>
         </div>
          <div class="about">
@@ -253,6 +256,7 @@ margin: 5vw;
             </form>
         </div>
     </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         function contactme() {
             var name = document.getElementById("name").value;
@@ -266,8 +270,18 @@ margin: 5vw;
 
             window.open(whatsappMessage, '_blank');
         }
-
+        let typingEffect = new Typed("#text", {
+            strings: ["Developer", "Coder","Pursuing Btech"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000
+        })
     </script>
+
+</body>
+
+
 
 </body>
 
